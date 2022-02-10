@@ -8,7 +8,7 @@ export default class extends Controller {
     connect() {
         navigator.permissions.query({ name:"clipboard-write" }).then((result) => {
             if (result.state === "granted") {
-                this.element.classList.add(this.suprortedClass)
+                this.element.classList.add(this.supportedClass)
             }
         })
     }
