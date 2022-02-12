@@ -45,6 +45,12 @@
 
   <div data-controller="content-loader" data-content-loader-url-value="/messages.html" data-content-loader-refresh-interval-value="5000">
   </div>
+  <hr>
+
+  <div data-controller="content-loader-2">
+    <a href="#" data-content-loader-2-url-param="/messages.html" data-action="content-loader-2#load">Messages</a>
+    <a href="#" data-content-loader-2-url-param="/comments.html" data-action="content-loader-2#load">Comments</a>
+  </div>
 </body>
 
 </html>

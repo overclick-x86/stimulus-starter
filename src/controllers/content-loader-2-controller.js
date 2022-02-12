@@ -15,8 +15,8 @@ export default class extends Controller {
     this.stopRefreshing()
   }
 
-  load() {
-    fetch(this.urlValue)
+  load({ params: { url } }) {
+    fetch(url)
       .then(response => response.text())
       .then(html => this.element.innerHTML = html)
   }
